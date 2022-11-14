@@ -6,24 +6,39 @@
 //pseudocode: we will use a for loop to look at each element in the array. inside the loop, I'll use a conditional to check for the letter t. I might use the .charAt(0) method or someone used I think .startsWith in class, so I'll look that one up. 
 //I looked up the .startsWith() method and I haven't used it yet so I'll try that one out. I can already tell it will need parentheses :)
 
-var arrayOfStrings = ["spoon", "tablecloth", "fork", "knife", "spatula", "teapot", "bowl", "plate", "tenderizer"];
+var arrayOfStrings = ["spoon", "tablecloth", "fork", "knife", "spatula", "Teapot", "bowl", "plate", "tenderizer"];
 
-// for (i = 0; i < arrayOfStrings.length; i++){
-//     if (arrayOfStrings[i].startsWith('t') || arrayOfStrings[i].startsWith('T')){
-//         console.log(arrayOfStrings[i]);
-//         // console.log(arrayOfStrings[i]);
-//     }
+for (i = 0; i < arrayOfStrings.length; i++){
+    if (arrayOfStrings[i].startsWith('t') || arrayOfStrings[i].startsWith('T')){
+        console.log(arrayOfStrings[i]);
+        // console.log(arrayOfStrings[i]);
+    }
+}
+
+// function printTWords(array) {
+    
+//     var newArray = []
+//     for (i = 0; i < array.length; i++){
+//         if (array[i].startsWith('t') || array[i].startsWith('T')){
+//             newArray = newArray + " " + array[i];
+//             // console.log(arrayOfStrings[i]);
+//         }
+//     } return newArray
 // }
+
+//console.log(printTWords(arrayOfStrings));
+//technically, it's working at this point, but I'd like to try something new.
 
 function printTWords(array) {
     
-    var newArray = []
     for (i = 0; i < array.length; i++){
         if (array[i].startsWith('t') || array[i].startsWith('T')){
-            newArray = newArray + array[i];
+            return array[i];
             // console.log(arrayOfStrings[i]);
-        }
-    } return newArray
+        } 
+    } 
 }
 
 console.log(printTWords(arrayOfStrings));
+
+//for some reason I'm not sure I understand, when I run this function in console.log, I am only getting the first value to print. But when I have the for statement outside of a function shell, like in lines 11-16, all of the "t" words print. I'm going to come back to this challenge at another time, but if you see this before that and have any thoughts, I'd love to hear them!
