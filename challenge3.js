@@ -8,12 +8,12 @@
 
 var arrayOfStrings = ["spoon", "tablecloth", "fork", "knife", "spatula", "Teapot", "bowl", "plate", "tenderizer"];
 
-for (i = 0; i < arrayOfStrings.length; i++){
-    if (arrayOfStrings[i].startsWith('t') || arrayOfStrings[i].startsWith('T')){
-        console.log(arrayOfStrings[i]);
-        // console.log(arrayOfStrings[i]);
-    }
-}
+// for (i = 0; i < arrayOfStrings.length; i++){
+//     if (arrayOfStrings[i].startsWith('t') || arrayOfStrings[i].startsWith('T')){
+//         console.log(arrayOfStrings[i]);
+//         // console.log(arrayOfStrings[i]);
+//     }
+// }
 
 // function printTWords(array) {
     
@@ -31,14 +31,13 @@ for (i = 0; i < arrayOfStrings.length; i++){
 
 function printTWords(array) {
     
-    for (i = 0; i < array.length; i++){
+    for (var i = 0; i < array.length; i++){
         if (array[i].startsWith('t') || array[i].startsWith('T')){
-            return array[i];
-            // console.log(arrayOfStrings[i]);
+            console.log(array[i]);  
         } 
     } 
 }
 
 console.log(printTWords(arrayOfStrings));
 
-//for some reason I'm not sure I understand, when I run this function in console.log, I am only getting the first value to print. But when I have the for statement outside of a function shell, like in lines 11-16, all of the "t" words print. I'm going to come back to this challenge at another time, but if you see this before that and have any thoughts, I'd love to hear them!
+
